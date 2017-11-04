@@ -37,7 +37,6 @@ setInterval(async () => {
                 currentTickers[exchange.name] = lastTicker
             if (Date.parse(lastTicker.datetime) - Date.parse(currentTickers[exchange.name].datetime) > check) 
                 currentTickers[exchange.name] = lastTicker
-            console.log(exchange.name, currentTickers[exchange.name].last, lastTicker.last)
         }
     });
 }, interval)
