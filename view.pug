@@ -1,0 +1,18 @@
+h1 Monitoreo Bitcoin - #{exchange}
+
+div
+    table(style='width:100%; border: 1px solid black; border-collapse: collapse;')
+        tr(style='border: 1px solid black')
+            th(style='border: 1px solid black') Campo
+            th(style='border: 1px solid black') Anterior
+            th(style='border: 1px solid black') Actual
+        each value, field in currentTicker
+            tr
+                if field != 'info' && value
+                    td(style='border: 1px solid black')=field
+                    td(style='border: 1px solid black')=value
+                    td(style='border: 1px solid black')=lastTicker[field]
+
+div
+  footer 
+    h5 Christian Barrios

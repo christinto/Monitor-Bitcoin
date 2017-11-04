@@ -1,0 +1,8 @@
+{
+    "exchanges": ["bittrex", "poloniex"],
+    "interval": 0.5,
+    "check": 15,
+    "lost": 50,
+    "to": "christiandbf@hotmail.com",
+    "subject": "Monitoreo Bitcoin"
+}
